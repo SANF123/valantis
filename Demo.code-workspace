@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../newimages"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Demo",
+		"editor.fontSize": 19
+	}
+}
