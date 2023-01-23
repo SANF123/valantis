@@ -1,0 +1,328 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#imagefirst{
+    position: absolute;
+    position:relative;
+    /* width: 200px;
+    height: 200px; */
+    /* object-fit: contain; */
+   text-align: center;
+  }
+  body{
+    background-color: white;
+    font-family: 'Quicksand', serif;
+   }
+   h1, h3, h4{
+    color: rgb(98, 7, 95);
+    text-shadow: 2px 2px 4px #999;
+}
+  /* ////dropdown/// */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  .dropdown #depropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  nav {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px rgb(106, 204, 204);
+  }
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+  }
+  nav ul li a,
+  nav ul li a:after,
+  nav ul li a:before {
+    transition: all .5s;
+  }
+  /* nav ul li a:hover {
+    color: #555;
+  } */
+  nav ul li a {
+    position:relative;
+    z-index: 1;
+  }
+  nav ul li a:hover {
+    /* color: #91640F; */
+  }
+  nav ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    /* background: #0bbeb5; */
+    background: #920781;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+  }
+  nav ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  /*/////faqcss //////*/
+  .faq {
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    margin-left: 150px;
+    margin-top: 30px;
+    height: 600px;
+  }
+  
+  .faq__title {
+    font-size: 40px;
+    text-transform:none;
+    color: #920781;
+    margin-top: 45px;
+    text-shadow: 2px 2px 4px #999;
+  }
+  
+  .faq__subtitle {
+    font-size: 20px;
+  }
+  
+  .faq__question {
+    margin: 5px;
+    background-color: rgb(106, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    width: 70%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 40px;
+    transition: all 0.2s ease;
+    margin-top: 18px;
+    box-shadow: 0px 5px 5px 0px rgb(137, 137, 137) ;
+  }
+  
+  .faq__question:after {
+    content: "\02795";
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+  }
+  
+  .faq__question_active:after {
+    content: "\2796";
+    color: white;
+    position: absolute;
+    left: 10px;
+    font-size: 14px;
+  }
+  
+  .faq__subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+  
+  .faq__panel {
+    display: none;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.5;
+    padding-left: 15%;
+    max-width: 70%;
+    overflow: hidden;
+  }
+  
+  .faq__question:hover {
+    background-color: #920781;
+  }
+  
+  .faq__panel_active {
+    display: block;
+  }
+  
+  /* /////footer///// */
+  #footer {
+    /* background-color:; */
+    color: #121212;
+    font-size: 16px;
+  }
+  #footer * {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
+  /* .row {
+    padding: 2em 1em;
+  } */
+  .row.primary {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: stretch;
+  }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    min-height: 15em;
+  }
+  .subscribe {
+    width: 100%;
+    text-align: left;
+    color: #920781;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  /* li:not(:first-child) {
+    margin-top: 0.8em;
+  } */
+  ul li a {
+    color: #121212;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    color: #920781;
+  }
+  .about p {
+    text-align: justify;
+    line-height: 2;
+    margin: 0;
+  }
+  #email,
+  button {
+    font-size: 15px;
+    padding: 4px;
+    width: 100%;
+    /* border-radius: 0px 15px 0px 15px; */
+    text-align: center;
+    /* margin-bottom: 5px; */
+  }
+  button {
+    background-color:#920781;
+    color: #ffffff;
+  }
+  div.social {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+  }
+  .social i:hover {
+    color: #920781;
+  }
+  .row.secondary {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .row.secondary i {
+    font-size: 1.8em;
+    color: #920781;
+  }
+  .row.secondary div {
+    padding: 1em 0;
+    width: 100%;
+    background-color: rgb(106, 204, 204) ;
+  }
+  /* .row.secondary div:hover {
+    background-color: #920781;
+    height: 95px;
+    transition: all 0.9s;
+    border-radius: 0px 25px 0px 25px;
+  } */
+  .textlast1{
+    font-size: 15px;
+  }
+  .lasttext{
+    font-size: 12px;
+  }
+  .addresslast {
+    padding: 0.3em 1em;
+    background-color: #920781;
+  }
+  .addresslast p {
+    font-size: 0.9em;
+    text-align: center;
+  }
+  @media screen and (max-width: 850px) {
+    .row.primary {
+      grid-template-columns: 1fr;
+    }
+    .row.secondary {
+      flex-direction: column;
+    }
+  }

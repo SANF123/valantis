@@ -30,8 +30,7 @@ body{
     width: 100%;
     margin: 0 auto;
     padding: 50px 0;
-     box-shadow: 0px 5px 0px #dedede;
-    box-shadow: 0px 5px 0px #057e7cfd;
+    box-shadow: 0px 5px 0px rgb(106, 204, 204);
   }
   nav ul {
     list-style: none;
@@ -138,7 +137,7 @@ body{
 }
 
 html {
-  background-color: #ecf9ff;
+  background-color: rgb(106, 204, 204);
 }
 
 body {
@@ -156,9 +155,12 @@ body {
 }
 
 h1 {
-    font-size: 24px;
     font-weight: 400;
     text-align: center;
+    text-shadow: 2px 2px 4px #999;
+}
+h3,h4{
+  text-shadow: 2px 2px 4px #999;
 }
 
 img {
@@ -222,7 +224,7 @@ img {
 .card_content {
   padding: 1rem;
   /* background: linear-gradient(to bottom left, #b423a3 40%, #2db2b0fd 100%); */
-  background: #089391fd;
+  background: rgb(106, 204, 204);
 }
 
 .card_title {
@@ -266,13 +268,9 @@ textarea {
     border: 0;
     width: 300px;
     font-size: 1rem;
-    background-color: #057e7c5c;
+    background-color: rgb(106, 204, 204);
     color: white;
-    border-radius: 4px;
 }
-  /* .row {
-    padding: 2em 1em;
-  } */
   .row.primary {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
@@ -320,7 +318,6 @@ textarea {
     font-size: 15px;
     padding: 4px;
     width: 100%;
-    border-radius: 0px 15px 0px 15px;
     text-align: center;
     /* margin-bottom: 5px; */
   }
@@ -350,13 +347,14 @@ textarea {
   .row.secondary div {
     padding: 1em 0;
     width: 100%;
+    background-color: rgb(106, 204, 204);
   }
-  .row.secondary div:hover {
+  /* .row.secondary div:hover {
     background-color: #920781;
     height: 95px;
     transition: all 0.9s;
     border-radius: 0px 25px 0px 25px;
-  }
+  } */
   .textlast1{
     font-size: 15px;
   }

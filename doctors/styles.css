@@ -31,7 +31,7 @@ body{
     margin: 0 auto;
     padding: 50px 0;
     /* box-shadow: 0px 5px 0px #dedede; */
-    box-shadow: 0px 5px 0px #057e7cfd;
+    box-shadow: 0px 5px 0px rgb(106, 204, 204);
   }
   nav ul {
     list-style: none;
@@ -90,6 +90,7 @@ body{
   /* /////// h text //////// */
   h1,h4,h3{
     color: #920781;
+    text-shadow: 2px 2px 4px #999;
   }
 
   /* //// card ///// */
@@ -116,7 +117,8 @@ body{
     height: 170px;
     margin-bottom: 18px;
     margin-left: 10px;
-    box-shadow: 0px 8px 0px #057e7cfd;
+    /* box-shadow: 0px 8px 0px rgb(106, 204, 204); */
+    box-shadow:  5px 5px 10px#999;
     
 }
 .card-text{
@@ -162,9 +164,9 @@ textarea {
     border: 0;
     width: 300px;
     font-size: 1rem;
-    background-color: #057e7c5c;
+    background-color:rgb(106, 204, 204) ;
     color: white;
-    border-radius: 4px;
+   
 }
   /* .row {
     padding: 2em 1em;
@@ -215,7 +217,6 @@ textarea {
     font-size: 15px;
     padding: 4px;
     width: 100%;
-    border-radius: 0px 15px 0px 15px;
     text-align: center;
     /* margin-bottom: 5px; */
   }
@@ -245,13 +246,14 @@ textarea {
   .row.secondary div {
     padding: 1em 0;
     width: 100%;
+    background-color:rgb(106, 204, 204) ;
   }
-  .row.secondary div:hover {
+  /* .row.secondary div:hover {
     background-color: #920781;
     height: 95px;
     transition: all 0.9s;
     border-radius: 0px 25px 0px 25px;
-  }
+  } */
   .textlast1{
     font-size: 15px;
   }
