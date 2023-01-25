@@ -3,11 +3,9 @@ function sendMail(){
         name: document.getElementById("name").value,
         email:document.getElementById("email").value,
         message:document.getElementById("message").value,
-        address:document.getElementById("address").value,
-        number:document.getElementById("number").value
     };
 const serviceID = "service_0kvwd1m";
-const templateID = "template_k8q4p5g";
+const templateID = "template_ndcmm96";
 
 emailjs.send(serviceID,templateID,params)
 .then(
@@ -15,8 +13,6 @@ emailjs.send(serviceID,templateID,params)
         document.getElementById("name").value ="";
         document.getElementById("email").value ="";
         document.getElementById("message").value ="";
-        document.getElementById("number").value ="";
-        document.getElementById("address").value ="";
         console.log(res);
         alert("your message snet successfully");
     }
