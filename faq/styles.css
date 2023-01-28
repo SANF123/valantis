@@ -92,9 +92,7 @@
     position:relative;
     z-index: 1;
   }
-  nav ul li a:hover {
-    /* color: #91640F; */
-  }
+
   nav ul li a:after {
     display: block;
     position: absolute;

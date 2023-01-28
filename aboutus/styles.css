@@ -11,10 +11,14 @@
 .col{
     border: 1px solid green;
 } */
+body{
+  background-color: white;
+  font-family: 'Quicksand', serif;
+}
 h1{
     color: #920781;
     text-shadow: 2px 2px 4px #999;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .dropdown {
     float: left;
@@ -90,9 +94,7 @@ h1{
     position:relative;
     z-index: 1;
   }
-  nav ul li a:hover {
-    /* color: #91640F; */
-  }
+  
   nav ul li a:after {
     display: block;
     position: absolute;
