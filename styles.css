@@ -24,7 +24,7 @@
    text-align: center;
   }
 h1, h3, h4{
-    color: rgb(98, 7, 95);
+    color: #7b035b;
     text-shadow: 2px 2px 4px #999;
 }
 
@@ -103,9 +103,7 @@ nav ul li a {
   position:relative;
   z-index: 1;
 }
-nav ul li a:hover {
-  /* color: #91640F; */
-}
+
 nav ul li a:after {
   display: block;
   position: absolute;
@@ -119,7 +117,7 @@ nav ul li a:after {
   content: '.';
   color: transparent;
   /* background: #0bbeb5; */
-  background: #920781;
+  background: #7b035b;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -164,7 +162,7 @@ a.button1{
 }
   a.button1:hover{
   color:#FFFFFF;
-  background-color:#920781;
+  background-color:#7b035b;
   }
   @media all and (max-width:30em){
   a.button1{
@@ -180,7 +178,7 @@ a.button1{
   }
   .text3{
     margin-top: 30px;
-    color: #920781;
+    color: #7b035b;
   }
 
   /* ////aboutimg /////*/
@@ -317,7 +315,7 @@ textarea {
     padding: 7px 35px;
     border-radius: px;
     display: inline-block;
-    background-color:#920781;
+    background-color:#7b035b;
     color: white;
     font-size: 18px;
     cursor: pointer;
@@ -381,7 +379,7 @@ input[type=checkbox]:checked + label {
 .subscribe {
   width: 100%;
   text-align: left;
-  color: #920781;
+  color: #7b035b;
   font-size: 15px;
   white-space: nowrap;
 }
@@ -400,7 +398,7 @@ ul li a {
   text-decoration: none;
 }
 ul li a:hover {
-  color: #920781;
+  color: #7b035b;
 }
 .about p {
   text-align: justify;
@@ -417,7 +415,7 @@ button {
   /* margin-bottom: 5px; */
 }
 button {
-  background-color:#920781;
+  background-color:#7b035b;
   color: #ffffff;
 }
 div.social {
@@ -428,7 +426,7 @@ div.social {
   margin-top: 0.5em;
 }
 .social i:hover {
-  color: #920781;
+  color: #7b035b;
 }
 .row.secondary {
   display: flex;
@@ -437,7 +435,7 @@ div.social {
 }
 .row.secondary i {
   font-size: 1.8em;
-  color: #920781;
+  color: #7b035b;
 }
 .row.secondary div {
   padding: 1em 0;
@@ -458,7 +456,7 @@ div.social {
 }
 .addresslast {
   padding: 0.3em 1em;
-  background-color: #920781;
+  background-color: #7b035b;
 }
 .addresslast p {
   font-size: 0.9em;

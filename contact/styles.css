@@ -9,12 +9,40 @@
     overflow: hidden;
   }
   h1{
-    color: #920781;
+    color: #7b035b;
     text-shadow: 2px 2px 4px #999;
     margin: 50px;
+    font-size: 38px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+  }
+  h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #7b035b;
+    margin-left: 422px;
+  }
+  
+  h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    max-width: 200px;
+    background-color: #7b035b96;
+    margin-left: 470px;
   }
   h4,h3{
-    color: #920781;
+    color: #7b035b;
     font-family: 'Quicksand', serif;
     margin-top: 10px;
     text-shadow: 2px 2px 4px #999;  
@@ -107,7 +135,7 @@
     content: '.';
     color: transparent;
     /* background: #0bbeb5; */
-    background: #920781;
+    background: #7b035b;
     visibility: none;
     opacity: 0;
     z-index: -1;
@@ -224,7 +252,7 @@
       padding: 7px 35px;
       border-radius: px;
       display: inline-block;
-      background-color:#920781;
+      background-color:#7b035b;
       color: white;
       font-size: 18px;
       cursor: pointer;
@@ -288,7 +316,7 @@
   .subscribe {
     width: 100%;
     text-align: left;
-    color: #920781;
+    color: #7b035b;
     font-size: 15px;
     white-space: nowrap;
     margin-top: 10px;
@@ -309,7 +337,7 @@
     text-decoration: none;
   }
   ul li a:hover {
-    color: #920781;
+    color: #7b035b;
   }
   .about p {
     text-align: justify;
@@ -326,7 +354,7 @@
     /* margin-bottom: 5px; */
   }
   button {
-    background-color:#920781;
+    background-color:#7b035b;
     color: #ffffff;
   }
   div.social {
@@ -337,7 +365,7 @@
     margin-top: 0.5em;
   }
   .social i:hover {
-    color: #920781;
+    color: #7b035b;
   }
   .row.secondary {
     display: flex;
@@ -346,7 +374,7 @@
   }
   .row.secondary i {
     font-size: 1.8em;
-    color: #920781;
+    color: #7b035b;
   }
   .row.secondary div {
     padding: 1em 0;
@@ -367,7 +395,7 @@
   }
   .addresslast {
     padding: 0.3em 1em;
-    background-color: #920781;
+    background-color: #7b035b;
   }
   .addresslast p {
     font-size: 0.9em;
