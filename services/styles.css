@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "slab", Arial, Helvetica, sans-serif;
 }
   /* .container{
     border: 1px solid black;
@@ -12,8 +13,8 @@
     border: 1px solid green;
 }    */
 body{
-  background-color: #c4ddec;
-  font-family: "slab", Arial, Helvetica, sans-serif;
+  background-color: #eff3f4;
+
 }
 
 #imagefirst{
@@ -66,7 +67,7 @@ h1:after {
 
 body {
   margin: 0px;
-  font-family: 'segoe ui';
+  /* font-family: 'segoe ui'; */
 }
 
 .nav {
@@ -164,127 +165,232 @@ body {
   }
 }
   
-  /* footer */
-#footer {
-    /* background-color:; */
-    color:#FFF;
-    font-size: 16px;
+/* cards */
+@media screen and(max-width: 940) {
+  .key-features{
+      padding: 50px 10px;
+      padding-top: 50px;
+      padding-right: 10px;
+      padding-bottom: 50px;
+      padding-left: 10px;
   }
-  #footer * {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-  }
-  /* .row {
-    padding: 2em 1em;
-  } */
-  .row.primary {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    align-items: stretch;
-  }
-  .column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em;
-    min-height: 15em;
-  }
-  .subscribe {
-    width: 100%;
-    text-align: left;
-    color: #7b035b;
-    font-size: 15px;
-    white-space: nowrap;
-    margin-top: 10px;
-    text-shadow: 2px 2px 4px #999;
-  }
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-  }
-  /* li:not(:first-child) {
-    margin-top: 0.8em;
-  } */
-  ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  ul li a:hover {
-    color: #fff;
-  }
-  .about p {
-    text-align: justify;
-    line-height: 2;
-    margin: 0;
-  }
-  #email,
-  button {
-    font-size: 15px;
-    padding: 4px;
-    width: 100%;
-    background-color: rgb(149, 199, 199) ;
-    /* border-radius: 0px 15px 0px 15px; */
+}
+section{
+  display: block;
+}
+.containers{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ 
+}
 
-    /* margin-bottom: 5px; */
-  }
-  button {
-    background-color:#7b035b;
-    color: #ffffff;
-  }
-  div.social {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2.4em;
-    flex-direction: row;
-    margin-top: 0.5em;
-  }
-  .social i:hover {
-    color: white;
-  }
-  .row.secondary {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .row.secondary i {
-    font-size: 1.8em;
-    color: #ffffff;
-  }
-  .row.secondary div {
-    padding: 1em 0;
+@media screen and (max-width: 1199px){
+.containers {
+  max-width: 100%;
+}
+}
+.inner-titel-key{
+  padding: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  margin-bottom: 30px;
+}
+h2{
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: slab; 
+}
+p{
+  width: 100%;
+  text-align: center;
+}
+.col-lg-4 .col-md-6{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@mixin make-row() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+#keyfeatures{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+  // Common properties for all breakpoints
+  %grid-column {
+    position: relative;
     width: 100%;
-    background-color: #263e62 ;
+    min-height: 1px; // Prevent columns from collapsing when empty
+    padding-right: ($gutter / 2);
+    padding-left: ($gutter / 2);
   }
-  /* .row.secondary div:hover {
-    background-color: #920781;
-    height: 95px;
-    transition: all 0.9s;
-    border-radius: 0px 25px 0px 25px;
+}
+   
+.features{
+  background-color: #FFF;
+  background: #c4ddec;
+  box-shadow: 5px 5px 10px#999; 
+  margin-bottom: 30px;
+  text-align: center;
+  padding: 30px;
+  }
+  .features:hover {
+    box-shadow: 5px 5px 10px#999;
+    transition: all 0.3s ease-in;
+   
+    background-color: #7b035b;;
+  }
+  .features:hover .textkey{
+    color: #fff;
+  }
+  .features:hover #svg{
+    fill: #fff;
+  }
+  .features:hover h5{
+    color: #FFF;
+  }
+/* #svg{
+     
+      padding: 20px;
+      color:  #7b035b;
+      margin-bottom: 30px;
   } */
-  .textlast1{
-    font-size: 15px;
+  .textkey{
+      font-size: 15px;
+      font-family: mouse-500;
   }
-  .lasttext{
-    font-size: 12px;
+  h2{
+    color: #7b035b;
   }
-  .addresslast {
-    padding: 0.3em 1em;
-    background-color: #263e62;
+  h1,h5,h6{
+      font-family: mouse-500;
+      color: #7b035b;
   }
-  .addresslast p {
-    font-size: 0.9em;
-    text-align: center;
+  h3,h4{
+    color: #fff;
   }
-  @media screen and (max-width: 850px) {
-    .row.primary {
-      grid-template-columns: 1fr;
-    }
-    .row.secondary {
-      flex-direction: column;
-    }
-  }  
+
+
+ /* footer */
+@media screen and (max-width: 940px) {
+  .footer {
+      padding: 50px 10px;
+  }
+}
+
+.footer {
+  @include big-padding();
+  padding: 30px;
+  padding-bottom: 0px;
+  padding: 50px 10px;
+  background-color:#263e62;
+  color: #FFF;
+}
+
+h2 {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #6C6C6C;
+}
+
+a {
+  color: #FFF;
+}
+
+i {
+  float: right;
+}
+
+.map-img {
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+a {
+  color: #FFF;
+}
+
+.copy {
+  padding: 20px;
+  background-color:#263e62;
+  color: #FFF;
+}
+
+  a {
+      color: #FFF;
+  }
+
+  span {
+      float: right;
+  }
+      i {
+          margin-right: 20px;
+      }
+
+
+.kf-2 {
+  background-color: #FCFCFC;
+  @include big-padding();
+}
+
+  .single-key {
+      @include shado-4();
+  }
+
+
+.copy {
+  padding: 20px;
+  background-color:#263e62;
+  color: #FFF;
+}
+
+span {
+  float: right;
+}
+
+  i {
+      margin-right: 20px;
+  }
+
+
+.kf-2 {
+  background-color: #FCFCFC;
+  @include big-padding();
+}
+  .single-key {
+      @include shado-4();
+  }
+.col-sm-4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-sm-12{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}

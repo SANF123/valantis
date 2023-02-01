@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "slab", Arial, Helvetica, sans-serif;
 }
  /* .container{
     border: 1px solid black;
@@ -12,10 +13,8 @@
     border: 1px solid green;
 }   */
 body{
-  background-color: #c4ddec;
+  background-color: #eff3f4;
     margin: 0px;
-    font-family: 'segoe ui';
-
 }
 
 #imagefirst{
@@ -133,28 +132,7 @@ body{
     padding-bottom: 15px;
     position: relative;
   }
-  h1:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 5px;
-    width: 55px;
-    background-color: #7b035b;
-    margin-left: 395px;
-  }
-  
-  h1:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 2px;
-    height: 1px;
-    width: 95%;
-    max-width: 230px;
-    background-color:#7b035b ;
-    margin-left: 450px;
-  }
+
   
   h3,h4{
     color: #7b035b;
@@ -286,122 +264,111 @@ img {
 }
 
 /*///// footer //////*/
-#footer {
-    /* background-color:; */
-    color: #fff;
-    font-size: 16px;
-   background-color:  #263e62;
+
+@media screen and (max-width: 940px) {
+  .footer {
+      padding: 50px 10px;
   }
-  #footer * {
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+}
+
+.footer {
+  @include big-padding();
+  padding: 30px;
+  padding-bottom: 0px;
+  padding: 50px 10px;
+  background-color:#263e62;
+  color: #FFF;
+}
+
+h2 {
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #6C6C6C;
+}
+
+a {
+  color: #FFF;
+}
+
+i {
+  float: right;
+}
+
+.map-img {
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+a {
+  color: #FFF;
+}
+
+.copy {
+  padding: 20px;
+  background-color:#263e62;
+  color: #FFF;
+}
+
+  a {
+      color: #FFF;
   }
 
-  .row.primary {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    align-items: stretch;
+  span {
+      float: right;
   }
-  .column {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 0 2em;
-    min-height: 15em;
+      i {
+          margin-right: 20px;
+      }
+
+
+.kf-2 {
+  background-color: #FCFCFC;
+  @include big-padding();
+}
+
+  .single-key {
+      @include shado-4();
   }
-  .subscribe {
-    width: 100%;
-    text-align: left;
-    color: #7b035b;
-    font-size: 15px;
-    white-space: nowrap;
+
+
+.copy {
+  padding: 20px;
+  background-color:#263e62;
+  color: #FFF;
+}
+
+span {
+  float: right;
+}
+
+  i {
+      margin-right: 20px;
   }
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+
+
+.kf-2 {
+  background-color: #FCFCFC;
+  @include big-padding();
+}
+  .single-key {
+      @include shado-4();
   }
-  /* li:not(:first-child) {
-    margin-top: 0.8em;
-  } */
-  ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-family: 'Quicksand', serif;
-  }
-  ul li a:hover {
-    color: #fff;
-  }
-  .about p {
-    text-align: justify;
-    line-height: 2;
-    margin: 0;
-  }
-  #email,
-  button {
-    font-size: 15px;
-    padding: 4px;
-    width: 100%;
-    text-align: center;
-    /* margin-bottom: 5px; */
-  }
-  button {
-    background-color:#7b035b;
-    color: #ffffff;
-  }
-  div.social {
-    display: flex;
-    justify-content: space-around;
-    font-size: 2.4em;
-    flex-direction: row;
-    margin-top: 0.5em;
-  }
-  .social i:hover {
-    color: #fff;
-  }
-  .row.secondary {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .row.secondary i {
-    font-size: 1.8em;
-    color: #fff;
-  }
-  .row.secondary div {
-    padding: 1em 0;
-    width: 100%;
-    background-color: #263e62;
-  }
-  /* .row.secondary div:hover {
-    background-color: #920781;
-    height: 95px;
-    transition: all 0.9s;
-    border-radius: 0px 25px 0px 25px;
-  } */
-  .textlast1{
-    font-size: 15px;
-  }
-  .lasttext{
-    font-size: 12px;
-  }
-  .addresslast {
-    padding: 0.3em 1em;
-    background-color: #263e62;
-  }
-  .addresslast p {
-    font-size: 0.9em;
-    text-align: center;
-  }
-  @media screen and (max-width: 850px) {
-    .row.primary {
-      grid-template-columns: 1fr;
-    }
-    .row.secondary {
-      flex-direction: column;
-    }
-  }
+.col-sm-4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-sm-12{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}

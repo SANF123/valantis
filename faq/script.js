@@ -1,7 +1,7 @@
-const route = (event)=>{
-    event = event || window.event;
-    event.preventDefault();
-    window.history.pushState({}, "",event.target.href);
-};
+const toggleBtn = document.querySelectorAll('.toggle-btn');
 
-window.route = route;
+toggleBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.parentNode.classList.toggle('active')  //only toggles the parent node which is the '.faq-card' here
+    })
+})
