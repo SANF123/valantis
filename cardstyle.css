@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    background-color: #f7f7ff !important;
+    font-family: mouse-300;
+    color: #6A6A6A;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+
+}
+
+@media screen and(max-width: 940) {
+    .key-features {
+        padding: 50px 10px;
+        padding-top: 50px;
+        padding-right: 10px;
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }
+}
+
+section {
+    display: block;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.inner-title {
+    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: slab;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+@mixin make-row() {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-lg-4 .col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
+
+    // Common properties for all breakpoints
+    %grid-column {
+        position: relative;
+        width: 100%;
+        min-height: 1px; // Prevent columns from collapsing when empty
+        padding-right: ($gutter / 2);
+        padding-left: ($gutter / 2);
+    }
+}
+
+.single-key {
+    background-color: #FFF;
+
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 30px;
+}
+
+svg {
+    background-color: #FFF;
+    padding: 20px;
+    font-size: 42px;
+    color: #00ab9f;
+    margin-bottom: 30px;
+    border-radius: 50px;
+}
+
+p {
+    font-size: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: mouse-500;
+}
+
+/* contact */
+
+.contact-rooo {
+    @include big-padding();
+    background-color: #FFF;
+}
+
+.contact-us-single {
+    background-color: #FFF;
+}
+
+.cop-ck {
+    padding: 10px 30px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.cf-ro {
+    margin-top: 10px;
+}
+
+.no-margin {
+    margin: 0px;
+
+}
+
+.no-padding {
+    padding: 0px;
+}
+
+.col-sm-6 .no-padding {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+
+iframe[Attributes Style] {
+    height: 480px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+}
+
+
+iframe {
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+@mixin make-row() {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: ($grid-gutter-width / -2);
+    margin-left: ($grid-gutter-width / -2);
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+    display: block;
+}
+
+label {
+    cursor: default;
+}
+
+div {
+    display: block;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #0d7a40 !important;
+}
+
+.form-control {
+    background-color: #F8F8F8;
+    margin-bottom: 20px;
+}
+
+:focus {
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+.col-sm-3 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+@media screen and (max-width: 940px) {
+    .footer {
+        padding: 50px 10px;
+    }
+}
+
+.footer {
+    @include big-padding();
+    padding: 30px;
+    padding-bottom: 0px;
+    padding: 50px 10px;
+    background-color: #444;
+    color: #FFF;
+}
+
+h2 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #6C6C6C;
+}
+
+a {
+    color: #FFF;
+}
+
+i {
+    float: right;
+}
+
+.map-img {
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+a {
+    color: #FFF;
+}
+
+.copy {
+    padding: 20px;
+    background-color: #2E2E2E;
+    color: #FFF;
+}
+
+    a {
+        color: #FFF;
+    }
+
+    span {
+        float: right;
+    }
+        i {
+            margin-right: 20px;
+        }
+
+
+.kf-2 {
+    background-color: #FCFCFC;
+    @include big-padding();
+}
+
+    .single-key {
+        @include shado-4();
+    }
+
+
+.copy {
+    padding: 20px;
+    background-color: #2E2E2E;
+    color: #FFF;
+}
+
+span {
+    float: right;
+}
+
+    i {
+        margin-right: 20px;
+    }
+
+
+.kf-2 {
+    background-color: #FCFCFC;
+    @include big-padding();
+}
+    .single-key {
+        @include shado-4();
+    }
+.col-sm-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-sm-12{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
