@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "slab", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 *, *::after, *::before{
   box-sizing: border-box;
@@ -133,7 +133,6 @@ h4 {
 .faqh{
   font-size: 25px;
   margin-top: 20px;
-  font-family: "slab", Arial, Helvetica, sans-serif;
 }
 .faq-card{
   background-color: #fff;
@@ -205,7 +204,6 @@ h4 {
 }
 
 .footer {
-  @include big-padding();
   padding: 30px;
   padding-bottom: 0px;
   padding: 50px 10px;
@@ -262,13 +260,7 @@ a {
 
 .kf-2 {
   background-color: #FCFCFC;
-  @include big-padding();
 }
-
-  .single-key {
-      @include shado-4();
-  }
-
 
 .copy {
   padding: 20px;
@@ -287,11 +279,7 @@ span {
 
 .kf-2 {
   background-color: #FCFCFC;
-  @include big-padding();
 }
-  .single-key {
-      @include shado-4();
-  }
 .col-sm-4 {
   position: relative;
   width: 100%;

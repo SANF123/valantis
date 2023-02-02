@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "slab", Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /* .container{
     border: 1px solid black;
@@ -28,7 +28,6 @@
  body {
   margin: 0px;
   background-color:#eff3f4;
-  font-family: 'segoe ui';
 }
 
 .nav {
@@ -125,7 +124,6 @@
     overflow-y: auto;
   }
 }
-  
   /* /////// h text //////// */
   h1{
     color: #7b035b;
@@ -144,58 +142,73 @@
   }
 
   /* //// card ///// */
-  .card-block {
-    font-size: 1em;
-    position: relative;
-    margin: 0;
-    padding: 1em;
+  .card {
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
     border: none;
-    border-top: 1px solid rgba(34, 36, 38, .1);
-    box-shadow: none;
-     
-}
-.card {
-    font-size: 1em;
-    overflow: hidden;
-    padding: 5;
-    border: none;
-    /* border-radius: .28571429rem; */
-    border-radius: 0px 25px 0px 25px;
-    /* box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5; */
-    margin-top:20px;
-    width: 1000px;
-    height: 170px;
-    margin-bottom: 18px;
-    margin-left: 10px;
-    /* box-shadow: 0px 8px 0px rgb(106, 204, 204); */
-    box-shadow:  5px 5px 10px#999;
-    background: #c4ddec;
-    
-}
-.card-text{
-  color: rgb(10, 10, 10);
-}
-.card :hover {
-  text-decoration: none;
-}
-.card :hover {
-  /* opacity: 0.8; */
-  background: #7b035b;
-  transition: all 0.4s;
-}
-.card :hover h4{
-  color: #fff;
-}
-.card :hover .card-text{
-  color: #fff;
-}
-.doctorimges{
-    margin-left: 90px;
-    border-radius:100%; 
-    width: 200px;
-    height: 200px;
-    object-fit: contain;
-}
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color:#7b035b;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  /* a {
+    text-decoration: none;
+    font-size: 22px;
+    color:#7b035b;
+  } */
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+  section {
+    display: block;
+  }
+  .containers {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  
+  }
+  @media screen and (max-width: 1199px) {
+    .containers {
+      max-width: 100%;
+    }
+  }
+  h2 {
+    color: #7b035b;
+  }
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+  }
 
 /*///// footer //////*/
 @media screen and (max-width: 940px) {
@@ -205,7 +218,6 @@
 }
 
 .footer {
-  @include big-padding();
   padding: 30px;
   padding-bottom: 0px;
   padding: 50px 10px;
@@ -237,10 +249,6 @@ i {
   padding-left: 20px;
 }
 
-a {
-  color: #FFF;
-}
-
 .copy {
   padding: 20px;
   background-color:#263e62;
@@ -261,13 +269,7 @@ a {
 
 .kf-2 {
   background-color: #FCFCFC;
-  @include big-padding();
 }
-
-  .single-key {
-      @include shado-4();
-  }
-
 
 .copy {
   padding: 20px;
@@ -286,11 +288,8 @@ span {
 
 .kf-2 {
   background-color: #FCFCFC;
-  @include big-padding();
 }
-  .single-key {
-      @include shado-4();
-  }
+
 .col-sm-4 {
   position: relative;
   width: 100%;
