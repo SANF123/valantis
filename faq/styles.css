@@ -70,6 +70,7 @@ h4 {
 .nav > .nav-links > a:hover {
   background-color: #7b035b;
   color: #fff;
+  transition: .7s;
 }
 
 .nav > #nav-check {

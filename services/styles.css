@@ -75,6 +75,7 @@ body{
 .nav > .nav-links > a:hover {
   background-color: #7b035b;
   color: #fff;
+  transition: .7s;
 }
 
 .nav > #nav-check {
@@ -224,6 +225,7 @@ p{
   }
   h2{
     color: #7b035b;
+    font-size: 30;
   }
   h1,h5,h6{
       color: #7b035b;

@@ -78,6 +78,7 @@ h4 {
 .nav > .nav-links > a:hover {
   background-color: #7b035b;
   color: #fff;
+  transition: .7s;
 }
 
 .nav > #nav-check {
@@ -194,7 +195,7 @@ margin-block-end: 1em;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 30px;
   margin-top: 10px;
 }
 
