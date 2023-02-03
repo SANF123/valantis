@@ -196,13 +196,6 @@ p{
   text-align: center;
   padding: 30px;
   }
-  
-  .features {
-    opacity: 0;
-  }
-  .features .animated{
-    opacity: 1;
-  }
 
   .features:hover {
     box-shadow: 5px 5px 10px#999;
