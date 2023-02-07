@@ -35,10 +35,10 @@
                   <a href="/" onclick="route()" target="_blank">HOME</a>
                   <a href="/services/" onclick="route()" target="_blank">SERVICES</a>
                   <a href="/doctors/" onclick="route()"target="_blank">DOCTORS</a>
-                  <a href="/department/" target="_blank">DEPARTMENT</a>
+                  <a href="/department/" target="_blank">DEPARTMENTS</a>
                   <a href="/aboutus/" onclick="route()" target="_blank">ABOUT US</a>
                   <a href="/contact/" onclick="route()" target="_blank">CONTACT</a>
-                  <a href="/faqs/" onclick="route()" target="_blank">FAQS</a>
+                  <a href="/faq/" onclick="route()" target="_blank">FAQS</a>
                 </div>
               </div>
             </div>
@@ -56,7 +56,7 @@
                 <div class="row no-margin">
                     <div class="col-sm-6 cop-ck">
                         <h2>Contact Form</h2>
-                        <form onsubmit="Mail(); reset(); return false;">
+                        <form  action="https://formspree.io/f/xdoveorp" method="post">
                             <div class="row cf-ro">
                                 <div class="col-sm-3"><label>Enter Name :</label></div>
                                 <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="Name" class="form-control input-sm" id="Name" required><span class="formerror"><b></b></span></div>
@@ -172,29 +172,7 @@
     </script>
 
  <script>
-  function Mail(){
 
-let name = document.getElementById("Name").value;
-let email = document.getElementById("Email").value;
-let number = document.getElementById("Contact").value;
-let message = document.getElementById("Message").value;
-
-
-
-
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "sanobarfatima54@gmail.com",
-    Password : "**********88EDC",
-    To : 'nehakhan.clicksms@gmail.com',
-    From : "sanobarfatima54@gmail.com",
-    Subject : "Mail From Contact Form",
-    Body : "Name:" + name + "<br/> User Email:" + email + "<br/> Contact Number:" + number + "<br/> Message:" + message +
-})
-.then(
-  message => alert(message)
-);
-  }
  </script>
 
 
