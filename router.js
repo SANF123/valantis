@@ -8,13 +8,13 @@ const route =(event) => {
 
 const routes ={
     "/":"/pages/index.html",
-    "/services": "/pages/services.html",
-    "/doctors": "/pages/doctors.html",
-    "/department": "/pages/department.html",
-    "/aboutus": "/pages/aboutus.html",
-    "/gallery": "/pages/gallery.html",
-    "/contact": "/pages/contact.html",
-    "/faqs": "/pages/faqs.html",
+    "/services/": "/pages/services.html",
+    "/doctors/": "/pages/doctors.html",
+    "/department/": "/pages/department.html",
+    "/aboutus/": "/pages/aboutus.html",
+    "/gallery/": "/pages/gallery.html",
+    "/contact/": "/pages/contact.html",
+    "/faq/": "/pages/faq.html",
 };
 
 const handleLocation = async () => {
