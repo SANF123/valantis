@@ -587,10 +587,6 @@ h4 {
 
 /* contact  */
 
-  
- iframe {
-  height: 480px;
-} 
 .contact-rooo {
   background-color: #eff3f4;
 }
@@ -642,12 +638,12 @@ h2 {
 .cop-ck .animated{
   opacity: 1;
 }
-iframe {
+/* iframe {
   border-width: 2px;
   border-style: inset;
   border-color: initial;
   border-image: initial;
-}
+} */
 
 article,
 aside,
